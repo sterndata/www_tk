@@ -252,5 +252,8 @@ h1.page-title {
    color: #2a6496;
 }
 h1,h2,h3,.h1, .h2, .h3 {
+  color: #2a6496;
+}
+h4.site-description {
    color: #777;
 }
