@@ -207,9 +207,8 @@ object {
 */
 
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
-
 .navbar-default .navbar-brand {
-   display:none;
+  float:left; 
 }
 .widget_recent_entries .nav > li > a {
    padding: 0;
