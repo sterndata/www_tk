@@ -224,18 +224,23 @@ object {
 .sidebar {
    font-size:90%;
 }
+.sidebar-padder {
+   margin-top: 1em;
+}
 .sidebar .widget-title {
    font-size: 150%;
 }
 #colophon {
   background-color: #ccc;
   padding-top: 1em;
+  box-shadow: 0px -3px 7px #444;
 }
 #colophon .widget {
   margin-bottom: 1em;
 }
 #masthead, .site-navigation {
   background-color: #ccc;
+  box-shadow: 0px 4px 6px #888;
 }
 .navbar {
   margin-bottom:0;
