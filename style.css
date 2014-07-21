@@ -228,3 +228,16 @@ object {
 .sidebar .widget-title {
    font-size: 150%;
 }
+#colophon {
+  background-color: #ccc;
+  padding-top: 1em;
+}
+#colophon .widget {
+  margin-bottom: 1em;
+}
+#masthead, .site-navigation {
+  background-color: #ccc;
+}
+.navbar {
+  margin-bottom:0;
+}
