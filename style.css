@@ -214,3 +214,11 @@ object {
 .widget_recent_entries .nav > li > a {
    padding: 0;
 }
+
+.site-header-inner a img {
+   float:left;
+}
+#hdr-sidebar {
+   float:right;
+   margin-top: 1em;
+}

@@ -14,6 +14,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href="https://fontastic.s3.amazonaws.com/Rg7ZGuBKALMbJ65KLW8VC6/icons.css" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
@@ -31,7 +32,9 @@
 						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 					</a>
 				<?php } // end if ( ! empty( $header_image ) ) ?>
-
+<div id="hdr-sidebar">
+<?php get_sidebar('header'); ?>
+</div>
 
 				<div class="site-branding">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
