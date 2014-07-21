@@ -240,3 +240,6 @@ object {
 .navbar {
   margin-bottom:0;
 }
+.entry-content a {
+  font-weight:bold;
+}
