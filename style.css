@@ -222,3 +222,9 @@ object {
    float:right;
    margin-top: 1em;
 }
+.sidebar {
+   font-size:90%;
+}
+.sidebar .widget-title {
+   font-size: 150%;
+}

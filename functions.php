@@ -171,3 +171,8 @@ function load_fonts() {
         }
     
 // add_action('wp_print_styles', 'load_fonts');
+
+function shortcode_year () {
+   return date('Y');
+}
+add_shortcode('year',shortcode_year);
