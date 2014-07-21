@@ -233,18 +233,24 @@ object {
 #colophon {
   background-color: #ccc;
   padding-top: 1em;
-  box-shadow: 0px -3px 7px #444;
+  box-shadow: 0px -3px 7px #999;
 }
 #colophon .widget {
   margin-bottom: 1em;
 }
 #masthead, .site-navigation {
   background-color: #ccc;
-  box-shadow: 0px 4px 6px #888;
+  box-shadow: 0px 4px 6px #999;
 }
 .navbar {
   margin-bottom:0;
 }
 .entry-content a {
   font-weight:bold;
+}
+h1.page-title {
+   color: #2a6496;
+}
+h1,h2,h3,.h1, .h2, .h3 {
+   color: #777;
 }
