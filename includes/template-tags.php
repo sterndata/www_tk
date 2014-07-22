@@ -195,7 +195,7 @@ function _sds_posted_on() {
 		esc_attr( get_the_time() ),
 		$time_string
 	);
-
+/**** remove updated report
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ){
 		$time_string_update = '<time class="updated" datetime="%1$s">%2$s</time>';
 		$time_string_update = sprintf( $time_string_update,
@@ -209,7 +209,7 @@ function _sds_posted_on() {
 		);
 		$time_string .= __(', updated on ', '_sds') . $time_string_update;
 	}
-
+********/
 	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', '_sds' ),
 		$time_string,
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
