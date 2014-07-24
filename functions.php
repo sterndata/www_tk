@@ -176,3 +176,13 @@ function shortcode_year () {
    return date('Y');
 }
 add_shortcode('year',shortcode_year);
+
+/*
+ * customize the jetpack carousel
+ */
+
+function enqueue_carousel_style() {
+        wp_enqueue_style( 'my-custom-jetpack-carousel', get_stylesheet_directory_uri() . '/my-jetpack-carousel.css', array( 'jetpack-carousel' ), wp_get_theme()->Version );
+}
+add_filter( 'post_gallery', 'enqueue_carousel_style', 1001, 2 );
+
