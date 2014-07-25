@@ -19,6 +19,8 @@ get_header(); ?>
 			<p><?php _e( 'Nothing could be found at this location. Maybe try a search?', '_sds' ); ?></p>
 
 			<?php get_search_form(); ?>
+<p>Or check one of these links</p>
+<?php echo do_shortcode('[sds-sitemap]'); ?>
 
 		</div><!-- .page-content -->
 
