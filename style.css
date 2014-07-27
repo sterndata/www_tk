@@ -214,12 +214,12 @@ object {
    padding: 0;
 }
 
-.site-header-inner a img {
-   float:left;
-}
 #hdr-sidebar {
    float:right;
    margin-top: 1em;
+}
+#hdr-sidebar .widget {
+   margin-bottom: -.5em;
 }
 .sidebar {
    font-size:90%;
@@ -262,4 +262,7 @@ h4.site-description {
 blockquote {
    font-size: 100%;
    margin-left: 20%;
+}
+.hdr-logo {
+  float:left;
 }
