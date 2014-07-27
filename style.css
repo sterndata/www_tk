@@ -266,3 +266,6 @@ blockquote {
 .hdr-logo {
   float:left;
 }
+#hdr-sidebar .textwidget img {
+   margin-left: .5em;
+}
