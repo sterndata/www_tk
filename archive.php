@@ -87,7 +87,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php _sds_content_nav( 'nav-below' ); ?>
+			<?php _sds_numeric_posts_nav( 'nav-below' ); ?>
 
 		<?php else : ?>
 
