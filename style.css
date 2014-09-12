@@ -241,10 +241,17 @@ object {
    border-style: solid;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-   color: #afafaf;
+   color: #fff;
+   border-color: #ccc;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 8px;
 }
 .navbar-default .navbar-nav > li > a {
    color:#fff;
+   border-color: transparent;
+   border-width: 1px;
+   border-style: solid;
 }
 @media (max-width: 767px) {
  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -256,6 +263,12 @@ object {
 }
 .site-title a, h4.site-description, #hdr-sidebar a, #colophon {
    color: #fff;
+}
+h4.site-description {
+   font-size: 20px;
+}
+h1.site-title {
+   text-shadow: 1px 1px #000;
 }
 #hdr-sidebar {
    float:right;
