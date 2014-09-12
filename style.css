@@ -31,7 +31,10 @@ Twitter Bootstrap
 /* This is a small security for too long strings titles */
 body {
 	word-wrap: break-word;
-        font-family: 'Open Sans',arial, sans;
+        font-family: 'Raleway','Open Sans',arial, sans;
+        font-size: 16px;
+        font-size: 1.6rem;
+        color: #606060;
 }
 
 /* Alignment */
@@ -209,11 +212,51 @@ object {
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
 .navbar-default .navbar-brand {
   float:left; 
+  color: #444;
+  display:none;
+}
+.navbar-default {
+   border: none;
+   background-color: inherit;
+}
+.navbar-default li {
+   margin-right: 1px;
+}
+.navbar-default .navbar-toggle {
+  background-color: #ddd;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+   background-color: inherit;
+   border-color: #ccc;
+   border-width: 1px;
+   border-style: solid;
+   border-radius: 8px;
+   color: #fff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+   border-radius: 8px;
+   background-color: inherit;
+   border-color: #ccc;
+   border-width: 1px;
+   border-style: solid;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   color: #afafaf;
+}
+.navbar-default .navbar-nav > li > a {
+   color:#fff;
+}
+@media (max-width: 767px) {
+ .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+   color: #fff;
+ }
 }
 .widget_recent_entries .nav > li > a {
    padding: 0;
 }
-
+.site-title a, h4.site-description, #hdr-sidebar a, #colophon {
+   color: #fff;
+}
 #hdr-sidebar {
    float:right;
    margin-top: 1em;
@@ -230,17 +273,30 @@ object {
 .sidebar .widget-title {
    font-size: 150%;
 }
-#colophon {
-  background-color: #ccc;
-  padding-top: 1em;
-  box-shadow: 0px -3px 7px #999;
-}
 #colophon .widget {
   margin-bottom: 1em;
 }
-#masthead, .site-navigation {
-  background-color: #ccc;
-  box-shadow: 0px 4px 6px #999;
+#masthead {
+   box-shadow: 0 3px 3px #ccc;
+   background: rgba(42,99,150,1);
+   background: -moz-linear-gradient(top, rgba(42,99,150,1) 0%, rgba(66,138,202,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(42,99,150,1)), color-stop(100%, rgba(66,138,202,1)));
+   background: -webkit-linear-gradient(top, rgba(42,99,150,1) 0%, rgba(66,138,202,1) 100%);
+   background: -o-linear-gradient(top, rgba(42,99,150,1) 0%, rgba(66,138,202,1) 100%);
+   background: -ms-linear-gradient(top, rgba(42,99,150,1) 0%, rgba(66,138,202,1) 100%);
+   background: linear-gradient(to bottom, rgba(42,99,150,1) 0%, rgba(66,138,202,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a6396', endColorstr='#428aca', GradientType=0 );
+}
+#colophon {
+   box-shadow: 0 -3px 3px #ccc;
+   background: rgba(66,138,202,1);
+background: -moz-linear-gradient(top, rgba(66,138,202,1) 0%, rgba(42,99,150,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(66,138,202,1)), color-stop(100%, rgba(42,99,150,1)));
+background: -webkit-linear-gradient(top, rgba(66,138,202,1) 0%, rgba(42,99,150,1) 100%);
+   background: -o-linear-gradient(top, rgba(66,138,202,1) 0%, rgba(42,99,150,1) 100%);
+   background: -ms-linear-gradient(top, rgba(66,138,202,1) 0%, rgba(42,99,150,1) 100%);
+   background: linear-gradient(to bottom, rgba(66,138,202,1) 0%, rgba(42,99,150,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#428aca', endColorstr='#2a6396', GradientType=0 );
 }
 .navbar {
   margin-bottom:0;
@@ -253,9 +309,7 @@ h1.page-title {
 }
 h1,h2,h3,.h1, .h2, .h3 {
   color: #2a6496;
-}
-h4.site-description {
-   color: #777;
+  font-family: 'Bitter', serif;
 }
 
 /* extend/edit blockquote */

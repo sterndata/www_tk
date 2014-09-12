@@ -43,7 +43,6 @@
 			</div>
 		</div>
 	</div><!-- .container -->
-</header><!-- #masthead -->
 
 <nav class="site-navigation">
 	<div class="container">
@@ -80,7 +79,7 @@
 		</div>
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
-
+</header><!-- masthead -->
 <div class="main-content">
 	<div class="container">
 		<div class="row">

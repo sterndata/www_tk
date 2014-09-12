@@ -166,11 +166,11 @@ require get_template_directory() . '/includes/jetpack.php';
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
 
 function load_fonts() {
-  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans');
+  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:400,600');
   wp_enqueue_style( 'googleFonts');
         }
     
-// add_action('wp_print_styles', 'load_fonts');
+add_action('wp_print_styles', 'load_fonts');
 /*
  * customize the jetpack carousel
  */
