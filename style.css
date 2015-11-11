@@ -224,6 +224,8 @@ object {
 }
 .navbar-default .navbar-toggle {
   background-color: #ddd;
+  width: 100% !important;
+  float:none;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
    background-color: inherit;
