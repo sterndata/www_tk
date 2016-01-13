@@ -251,3 +251,5 @@ function _sds_numeric_posts_nav() {
 	echo '</ul></div>' . "\n";
 
 }
+// Allow photon on secure url.
+add_filter( 'jetpack_photon_reject_https', '__return_false' );
