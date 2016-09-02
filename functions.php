@@ -145,6 +145,9 @@ function is_wp_support() {
 	if ( 'w.org' == $get ) {
 		return true;
 	}
+	if (preg_match( '/wordpress.org/', $_SERVER['HTTP_REFERER'] ))  {
+		return true;
+	}
 	return false;
 }
 
