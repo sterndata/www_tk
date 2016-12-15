@@ -397,15 +397,3 @@ blockquote {
   }
 }
 
-.modal-content {
-  background:aliceblue;
-	color: #000;
-	text-align:center;
-}
-.modal-header {
-	font-weight:bold;
-}
-
-.modal-body {}
-
-.modal-footer {}

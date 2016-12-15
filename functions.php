@@ -132,9 +132,6 @@ function _sds_scripts() {
 		wp_enqueue_script( '_sds-keyboard-image-navigation', get_template_directory_uri() . '/includes/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 
-	if ( is_wp_support() ) {
-			wp_enqueue_script( 'modal-referrer', get_template_directory_uri() . '/modal-referrer.js', array( 'jquery' ) );
-	}
 
 }
 
@@ -269,33 +266,3 @@ function _sds_numeric_posts_nav() {
 // Allow photon on secure url.
 add_filter( 'jetpack_photon_reject_https', '__return_false' );
 
-function front_page_filter( $content ) {
-	// if ( ! is_front_page() ) { return $content; }
-	ob_start();
-	?>
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-<div class="modal-dialog">
-<!-- Modal content-->
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal">&times;</button>
-<h4 class="modal-title">Hello, fellow WordPresser!</h4>
-</div>
-<div class="modal-body">
-<p>It seems you've come here from a link on WordPress.org.<br>
-			If you're following up on a support question that we were discussing in a forum, please note:</p>
-			<p><em>What happens in the forums stays in the forums.</em></p>
-			If, on the other hand, you're here to see who I am and what I'm up to, read on!</p>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-</div>
-</div>
-
-</div>
-</div>
-<?php
-	return $content . ob_get_clean();
-}
-add_filter( 'the_content', 'front_page_filter' );
